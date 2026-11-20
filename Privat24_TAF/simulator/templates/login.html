@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Privat24 — Login</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Privat24</h1>
+    <h2>Авторизація</h2>
+
+    <form method="POST" action="/login">
+
+        <label>Логін</label>
+        <input
+            type="text"
+            id="username"
+            name="username"
+        >
+
+        <label>Пароль</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+        >
+
+        <button type="submit" id="login-button">
+            Увійти
+        </button>
+
+    </form>
+
+    {% if error %}
+        <p id="error-message" class="error">
+            {{ error }}
+        </p>
+    {% endif %}
+</div>
+
+</body>
+</html>

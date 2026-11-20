@@ -1,0 +1,27 @@
+
+{
+  "valid_users": [
+    {
+      "id": "USER_001",
+      "username": "test_user_01",
+      "password": "TestPass123",
+      "expected_role": "customer"
+    }
+  ],
+  "invalid_users": [
+    {
+      "id": "USER_002",
+      "username": "wrong_user",
+      "password": "WrongPass123",
+      "expected_error": "Invalid credentials"
+    }
+  ],
+  "boundary_users": [
+    {
+      "id": "USER_003",
+      "username": "",
+      "password": "TestPass123",
+      "expected_error": "Username is required"
+    }
+  ]
+}

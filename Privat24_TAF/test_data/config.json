@@ -1,0 +1,14 @@
+
+{
+  "environment": "local",
+  "application": "Privat24 Test Environment",
+  "browser": "chrome",
+  "timeouts": {
+    "implicit": 5,
+    "explicit": 10
+  },
+  "test_settings": {
+    "take_screenshot_on_failure": true,
+    "close_browser_after_test": true
+  }
+}
